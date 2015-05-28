@@ -126,7 +126,7 @@ addrbook_get_rand_addr(const struct addrbook *book)
       return NULL;
    }
 
-   idx = random() % count;
+   idx = arc4random() % count;
 
    addr = NULL;
    key = NULL;
